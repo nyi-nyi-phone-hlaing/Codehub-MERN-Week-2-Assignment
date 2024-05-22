@@ -55,37 +55,73 @@ body {
   margin-bottom: 10px;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.todo-container form,
+.todo-container .container {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-td,
-th {
-  font-size: 1rem;
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+.todo-container form input {
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: 0.5s ease;
 }
 
-td span {
-  font-size: 0.9rem;
-  display: inline-block;
+.todo-container input:focus,
+.todo-container input:hover {
+  outline: none;
+  border-color: rgba(129, 140, 248);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+.todo-container button {
   width: 100%;
-  background: #333;
-  padding: 5px;
-  text-align: center;
+  background: cornflowerblue;
   color: #fff;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+.todo-container .container h2 {
+  font-size: 1rem;
 }
 
-tr:nth-child(even) th,
-tr:nth-child(even) td {
-  border: 1px solid #ffffff;
+.todo-container .container .card {
+  background: #fff;
+  padding: 10px;
+}
+
+.todo-container .container .card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.todo-container .container .card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.todo-container .container .card span {
+  font-size: 0.9rem;
+  background: cornflowerblue;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
 @media (max-width: 601px) {
